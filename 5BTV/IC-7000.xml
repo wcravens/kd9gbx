@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	IC7000 Rig definition file for use with fldigi
+-->
+<RIGDEF>
+  <RIG>Icom 7000</RIG>
+  <PROGRAMMER>
+	Bill Buoy    N5BIA
+	Tested by:   N5BIA, Bill
+	Modified by: Joe, K3JV
+                     Dave, W1HKJ iaw AA5UK
+</PROGRAMMER>
+  <STATUS>
+	Verified
+	Version:	3.20.xx
+	Date:		19 September 2010
+</STATUS>
+  <TITLE>RigCAT - IC-7000</TITLE>
+  <!--
+default settings for initial setup
+-->
+  <TIMEOUT>100</TIMEOUT>
+  <RETRIES>2</RETRIES>
+  <WRITE_DELAY>50</WRITE_DELAY>
+  <INIT_DELAY>30</INIT_DELAY>
+  <BAUDRATE>19200</BAUDRATE>
+  <RTSCTS>false</RTSCTS>
+  <ECHO>true</ECHO>
+  <CMDPTT>true</CMDPTT>
+  <MODES>
+    <ELEMENT>
+      <SYMBOL>LSB</SYMBOL>
+      <BYTE>00</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>USB</SYMBOL>
+      <BYTE>01</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>AM</SYMBOL>
+      <BYTE>02</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>CW</SYMBOL>
+      <BYTE>03</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>RTTY</SYMBOL>
+      <BYTE>04</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>FM</SYMBOL>
+      <BYTE>05</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>CW-R</SYMBOL>
+      <BYTE>07</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>RTTY-R</SYMBOL>
+      <BYTE>08</BYTE>
+    </ELEMENT>
+  </MODES>
+  <!-- lsb mode strings should match those given in the modes id specifier -->
+  <LSBMODES>
+    <STRING>LSB</STRING>
+    <STRING>RTTY</STRING>
+    <STRING>CW-R</STRING>
+  </LSBMODES>
+  <BANDWIDTHS>
+    <ELEMENT>
+      <SYMBOL>50</SYMBOL>
+      <BYTE>00</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>100</SYMBOL>
+      <BYTE>01</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>150</SYMBOL>
+      <BYTE>02</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>200</SYMBOL>
+      <BYTE>03</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>250</SYMBOL>
+      <BYTE>04</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>300</SYMBOL>
+      <BYTE>05</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>350</SYMBOL>
+      <BYTE>06</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>400</SYMBOL>
+      <BYTE>07</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>450</SYMBOL>
+      <BYTE>08</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>500</SYMBOL>
+      <BYTE>09</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>600</SYMBOL>
+      <BYTE>10</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>700</SYMBOL>
+      <BYTE>11</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>800</SYMBOL>
+      <BYTE>12</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>900</SYMBOL>
+      <BYTE>13</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>1000</SYMBOL>
+      <BYTE>14</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>1100</SYMBOL>
+      <BYTE>15</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>1200</SYMBOL>
+      <BYTE>16</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>1300</SYMBOL>
+      <BYTE>17</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>1400</SYMBOL>
+      <BYTE>18</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>1500</SYMBOL>
+      <BYTE>19</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>1600</SYMBOL>
+      <BYTE>20</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>1700</SYMBOL>
+      <BYTE>21</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>1800</SYMBOL>
+      <BYTE>22</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>1900</SYMBOL>
+      <BYTE>23</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>2000</SYMBOL>
+      <BYTE>24</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>2100</SYMBOL>
+      <BYTE>25</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>2200</SYMBOL>
+      <BYTE>26</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>2300</SYMBOL>
+      <BYTE>27</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>2400</SYMBOL>
+      <BYTE>28</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>2500</SYMBOL>
+      <BYTE>29</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>2600</SYMBOL>
+      <BYTE>30</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>2700</SYMBOL>
+      <BYTE>31</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>2800</SYMBOL>
+      <BYTE>32</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>2900</SYMBOL>
+      <BYTE>33</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>3000</SYMBOL>
+      <BYTE>34</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>3100</SYMBOL>
+      <BYTE>35</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>3200</SYMBOL>
+      <BYTE>36</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>3300</SYMBOL>
+      <BYTE>37</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>3400</SYMBOL>
+      <BYTE>38</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>3500</SYMBOL>
+      <BYTE>39</BYTE>
+    </ELEMENT>
+    <ELEMENT>
+      <SYMBOL>3600</SYMBOL>
+      <BYTE>40</BYTE>
+    </ELEMENT>
+  </BANDWIDTHS>
+  <REPLY>
+    <SYMBOL>OK</SYMBOL>
+    <SIZE>6</SIZE>
+    <BYTES>FE FE E0 70</BYTES>
+    <BYTE>FB</BYTE>
+    <BYTE>FD</BYTE>
+  </REPLY>
+  <REPLY>
+    <SYMBOL>BAD</SYMBOL>
+    <SIZE>6</SIZE>
+    <BYTES>FE FE E0 70</BYTES>
+    <BYTE>FA</BYTE>
+    <BYTE>FD</BYTE>
+  </REPLY>
+  <REPLY>
+    <SYMBOL>MODE</SYMBOL>
+    <SIZE>8</SIZE>
+    <BYTES>FE FE E0 70</BYTES>
+    <BYTE>04</BYTE>
+    <DATA>
+      <DTYPE>BINARY</DTYPE>
+      <SIZE>1</SIZE>
+    </DATA>
+    <FILL>1</FILL>
+    <BYTE>FD</BYTE>
+  </REPLY>
+  <REPLY>
+    <SYMBOL>BW</SYMBOL>
+    <SIZE>8</SIZE>
+    <BYTES>FE FE E0 70</BYTES>
+    <BYTES>1A 03</BYTES>
+    <DATA>
+      <DTYPE>BINARY</DTYPE>
+      <SIZE>1</SIZE>
+    </DATA>
+    <BYTE>FD</BYTE>
+  </REPLY>
+  <REPLY>
+    <SYMBOL>FREQ</SYMBOL>
+    <SIZE>11</SIZE>
+    <BYTES>FE FE E0 70</BYTES>
+    <BYTE>03</BYTE>
+    <DATA>
+      <DTYPE>BCD</DTYPE>
+      <SIZE> 9 </SIZE>
+      <MAX> 460000000 </MAX>
+      <MIN> 30000 </MIN>
+      <RESOL> 1 </RESOL>
+      <REV>true</REV>
+    </DATA>
+    <BYTE>FD</BYTE>
+  </REPLY>
+  <COMMAND>
+    <SYMBOL>SETFREQ</SYMBOL>
+    <SIZE>11</SIZE>
+    <BYTES>FE FE 70 E0</BYTES>
+    <BYTE>05</BYTE>
+    <DATA>
+      <DTYPE>BCD</DTYPE>
+      <SIZE> 9 </SIZE>
+      <MAX> 460000000 </MAX>
+      <MIN> 30000 </MIN>
+      <RESOL> 1 </RESOL>
+      <REV>true</REV>
+    </DATA>
+    <BYTE>FD </BYTE>
+    <OK>OK</OK>
+    <BAD>BAD</BAD>
+  </COMMAND>
+  <COMMAND>
+    <SYMBOL>GETFREQ</SYMBOL>
+    <SIZE>6</SIZE>
+    <BYTES>FE FE 70 E0</BYTES>
+    <BYTE>03</BYTE>
+    <BYTE>FD </BYTE>
+    <INFO>FREQ</INFO>
+  </COMMAND>
+  <COMMAND>
+    <SYMBOL>SETMODE</SYMBOL>
+    <SIZE>7</SIZE>
+    <BYTES>FE FE 70 E0</BYTES>
+    <BYTE>06</BYTE>
+    <DATA>
+      <DTYPE>BINARY</DTYPE>
+      <SIZE>1</SIZE>
+    </DATA>
+    <BYTE>FD </BYTE>
+    <OK>OK</OK>
+    <BAD>BAD</BAD>
+  </COMMAND>
+  <COMMAND>
+    <SYMBOL>GETMODE</SYMBOL>
+    <SIZE>6</SIZE>
+    <BYTES>FE FE 70 E0</BYTES>
+    <BYTE>04</BYTE>
+    <BYTE>FD</BYTE>
+    <INFO>MODE</INFO>
+  </COMMAND>
+  <COMMAND>
+    <SYMBOL>PTTON</SYMBOL>
+    <SIZE>8</SIZE>
+    <BYTES>FE FE 70 E0</BYTES>
+    <BYTES>1C 00 01</BYTES>
+    <BYTE>FD</BYTE>
+    <OK>OK</OK>
+    <BAD>BAD</BAD>
+  </COMMAND>
+  <COMMAND>
+    <SYMBOL>PTTOFF</SYMBOL>
+    <SIZE>8</SIZE>
+    <BYTES>FE FE 70 E0</BYTES>
+    <BYTES>1C 00 00</BYTES>
+    <BYTE>FD</BYTE>
+    <OK>OK</OK>
+    <BAD>BAD</BAD>
+  </COMMAND>
+  <COMMAND>
+    <SYMBOL>SETBW</SYMBOL>
+    <SIZE>8</SIZE>
+    <BYTES>FE FE 70 E0</BYTES>
+    <BYTES>1A 03</BYTES>
+    <DATA>
+      <DTYPE>BINARY</DTYPE>
+      <SIZE>1</SIZE>
+    </DATA>
+    <BYTE>FD</BYTE>
+    <OK>OK</OK>
+    <BAD>BAD</BAD>
+  </COMMAND>
+  <COMMAND>
+    <SYMBOL>GETBW</SYMBOL>
+    <SIZE>7</SIZE>
+    <BYTES>FE FE 70 E0 1A 03 FD</BYTES>
+    <INFO>BW</INFO>
+  </COMMAND>
+</RIGDEF>
